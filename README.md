@@ -1,9 +1,26 @@
 # FLARE: A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19494414.svg)](https://doi.org/10.5281/zenodo.19494414)
+[![arXiv](https://img.shields.io/badge/arXiv-2604.08196-b31b1b.svg)](https://arxiv.org/abs/2604.08196)
+
+
 **Author:** Atal Agrawal  
 **Affiliation:** Department of Physics, Indian Institute of Technology Roorkee
 
 This repository contains the code and data for the FLARE (**F**lare detection via physics-informed **L**earning, **A**nomaly scoring, and **R**ecognition **E**ngine) framework, a three-stage pipeline for detecting transient flares in quasar light curves.
+
+---
+
+## Dataset
+
+The dataset used for training, fine-tuning, and benchmarking is publicly available on Zenodo:
+
+**DOI:** https://doi.org/10.5281/zenodo.19494414
+
+The dataset consists of fully simulated quasar light curves generated using a Damped Random Walk (DRW) process with synthetic flare and artifact injection (FRED, Gaussian, Gamma, and spike classes). It includes rendered light curve images and JSONL files containing prompts and labels for Vision Language Model (VLM) fine-tuning and evaluation.
+
+---
+
 
 ## Overview
 
