@@ -1,6 +1,6 @@
 # FLARE: A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves
 
-[[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19494414.svg)](https://doi.org/10.5281/zenodo.19494414)](https://doi.org/10.5281/zenodo.19494414)
+[[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19494414.svg)](https://doi.org/10.5281/zenodo.19494414)]
 [![arXiv](https://img.shields.io/badge/arXiv-2604.08196-b31b1b.svg)](https://arxiv.org/abs/2604.08196)
 
 
