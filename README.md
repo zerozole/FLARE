@@ -135,11 +135,14 @@ Two VLMs independently classify each candidate light curve image as flare or non
 If you use this code or the FLARE framework, please cite:
 
 ```
-@article{agrawal2026statistical,
-  title={A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves},
-  author={Agrawal, Atal},
-  journal={arXiv preprint arXiv:2604.08196},
-  year={2026}
+@article{agrawal2026statisticalaiframeworkdetectingtransient,
+      title={A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves}, 
+      author={Atal Agrawal},
+      year={2026},
+      eprint={2604.08196},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.IM},
+      url={https://arxiv.org/abs/2604.08196}, 
 }
 ```
 
