@@ -1,6 +1,5 @@
 # FLARE: A Statistical-AI Framework for Detecting Transient Flares in SDSS Stripe 82 Quasar Light Curves
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19494414.svg)](https://doi.org/10.5281/zenodo.19494414)
 [![arXiv](https://img.shields.io/badge/arXiv-2604.08196-b31b1b.svg)](https://arxiv.org/abs/2604.08196)
 
 
@@ -8,16 +7,6 @@
 **Affiliation:** Department of Physics, Indian Institute of Technology Roorkee
 
 This repository contains the code and data for the FLARE (**F**lare detection via physics-informed **L**earning, **A**nomaly scoring, and **R**ecognition **E**ngine) framework, a three-stage pipeline for detecting transient flares in quasar light curves.
-
----
-
-## Dataset
-
-The dataset used for training, fine-tuning, and benchmarking is publicly available on Zenodo:
-
-**DOI:** https://doi.org/10.5281/zenodo.19494414
-
-The dataset consists of fully simulated quasar light curves generated using a Damped Random Walk (DRW) process with synthetic flare and artifact injection (FRED, Gaussian, Gamma, and spike classes). It includes rendered light curve images and JSONL files containing prompts and labels for Vision Language Model (VLM) fine-tuning and evaluation.
 
 ---
 
@@ -85,6 +74,13 @@ Two VLMs independently classify each candidate light curve image as flare or non
 - **Preprocessing:** Removal of bad observations (−99.99 / 99.99), Galactic extinction correction, MAD-based single-point spike removal
 - **Simulations:** DRW light curves generated with [eztao](https://github.com/ywx649999311/EzTao) using per-object (τ, σ̂) parameters; synthetic FRED, Gaussian, and Gamma flares injected in flux space
 
+## Sim2Science 2026 workshop paper
+
+The [`sim2science/`](sim2science/) folder holds the code for "Beyond Pattern Matching: Bridging the
+Sim-to-Real Gap in Transient Flare Verification Using Vision-Language Models" (NeurIPS 2026 Workshop
+on Sim2Science): CNNs and ViTs trained on the simulated corpus split by quasar, the axis and prompt
+ablations, single frontier VLMs on the 92 OU candidates, and the paper figures. See its README.
+
 ## Repository Structure
 
 ```
@@ -98,6 +94,7 @@ Two VLMs independently classify each candidate light curve image as flare or non
 │── Qwen_qlora.ipynb                 # QLoRA fine-tuning of Qwen2.5VL-7b
 │── Running_Inference.ipynb          # VLM benchmarking inference
 │── VLM_Recognition_Engine.ipynb     # Multi-VLM recognition engine with feedback loop
+│── sim2science/                     # Sim2Science 2026 camera-ready: CNN/ViT controls and VLM ablations
 ```
 
 ## Requirements
