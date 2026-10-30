@@ -95,6 +95,7 @@ ablations, single frontier VLMs on the 92 OU candidates, and the paper figures. 
 │── Running_Inference.ipynb          # VLM benchmarking inference
 │── VLM_Recognition_Engine.ipynb     # Multi-VLM recognition engine with feedback loop
 │── sim2science/                     # Sim2Science 2026 camera-ready: CNN/ViT controls and VLM ablations
+│── ml4ps/                           # ML4PS 2026 camera-ready: the same verification experiments
 ```
 
 ## Requirements
